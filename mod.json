@@ -6,12 +6,55 @@
 		"mac": "2.2074",
 		"ios": "2.2074"
 	},
-	"id": "$MOD_ID",
-	"name": "$MOD_NAME",
-	"version": "$MOD_VERSION",
-	"developer": "$MOD_DEVELOPER",
-	"description": "$MOD_DESCRIPTION",
-	"dependencies": {
-		"geode.node-ids": ">=v1.20.0"
-	}
+    "version": "0.1.beta",
+    "id": "jochill_geometry_madness", 
+    "name": "Geometry Madness",
+    "developer": "Jochill",
+    "description": "Total Madness",
+    "dependencies": [
+        {
+            "id": "geode.node-ids",
+            "version": "1.0.0",
+            "importance": "required"
+        }
+    ],
+    "settings": {
+        "enable-memes": {
+            "name": "Random Memes",
+            "description": "Aktiviere zufällige Memes alle 10 Sekunden",
+            "type": "bool",
+            "default": true
+        },
+        "meme-interval": {
+            "name": "Meme Interval",
+            "description": "Zeit zwischen Memes in Sekunden",
+            "type": "float", 
+            "default": 10.0,
+            "min": 5.0,
+            "max": 30.0
+        },
+        "meme-sounds": {
+            "name": "Meme Sounds",
+            "description": "Spiele Meme-Sounds ab",
+            "type": "bool",
+            "default": true
+        },
+        "meme-texts": {
+            "name": "Meme Texts", 
+            "description": "Zeige Meme-Texte an",
+            "type": "bool",
+            "default": true
+        },
+        "meme-effects": {
+            "name": "Meme Effects",
+            "description": "Aktiviere visuelle Meme-Effekte",
+            "type": "bool",
+            "default": true
+        }
+    },
+    "resources": {
+        "sparkle.plist": {
+            "description": "Sparkle particles for meme effects"
+        }
+    }
 }
