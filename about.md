@@ -1,3 +1,3 @@
-# Template Mod
+# Geometry Madness
 
-Edit about.md to change this
+Total Madness.
